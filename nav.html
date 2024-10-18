@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+         }
+         /*
+        .container-fluid{
+            display: fix;
+            background-color: rgb(181, 201, 218);
+            height: 80px;
+            position: fixed;
+            
+            
+        }
+        .logo{
+            height: 60px;
+        }
+        .navbar-collapse{
+            display: flex;
+            justify-content: space-between;
+            margin-left: 800px;
+            padding: 30px;
+        }
+ */
+
+h1{
+    margin-top: 1000px;
+}
+
+
+
+
+
+.navbar {
+  background-color: #143452;
+  color: #fff;
+  padding: 2em;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-right: 1em;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+
+}
+
+.nav-links li {
+  margin-right: 2em;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: #fdfbfb;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  padding: 1em;
+  border-radius: 0 0 5px 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-menu li {
+  margin-bottom: 1em;
+}
+
+.dropdown-menu a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+  color: #ccc;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Responsive styles */
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    cursor: pointer;
+  }
+  
+  .menu-toggle span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin-bottom: 5px;
+    transition: transform 0.2s ease;
+  }
+  
+  #menu-toggle:checked + .menu-toggle span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  
+  #menu-toggle:checked + .menu-toggle span:nth-child(2) {
+    opacity: 0;
+  }
+  
+  #menu-toggle:checked + .menu-toggle span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+  
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1em;
+    background-color: #333;
+    position: absolute;
+    top: 4em;
+    left: 0;
+    width: 100%;
+  }
+  
+  #menu-toggle:checked ~ .nav-links {
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin-right: 0;
+    margin-bottom: 1em;
+  }
+  
+  .dropdown-menu {
+    position: relative;
+    background-color: transparent;
+    padding: 0;
+    border-radius: 0;
+    box-shadow: none;
+  }
+}
+
+    </style>
+</head>
+<body>
+
+
+    <nav class="navbar">
+        <div class="logo">Eyewear Company</div>
+        <label for="menu-toggle" class="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li class="dropdown">
+            <a href="#">Products</a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Sunglasses</a></li>
+              <li><a href="#">Prescription Glasses</a></li>
+              <li><a href="#">Contact Lenses</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+
+
+
+
+
+
+<h1>etreww</h1>
+
+
+
+
+
+
+
+
+
+
+    
+
+</body>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script  src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+
+<script>
+
+// $(document).ready(()=>{
+//     $.get('nav.html',(data)=>{
+//         console.log(data)
+//         document.getElementById('nav-wrappeer').innerHTML = data
+//     })
+//     $.get('nav.html',(data)=>{
+//         console.log(data)
+//         document.getElementById('nav-wrappeer').innerHTML = data
+//     })
+// })
+
+const menuToggle = document.getElementById('menu-toggle');
+const navLinks = document.querySelector('.nav-links');
+
+menuToggle.addEventListener('change', () => {
+  navLinks.classList.toggle('active');
+});
+
+
+
+
+
+
+</script>
+</html>
